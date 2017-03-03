@@ -23,7 +23,7 @@ export class CounterView implements OnInit {
     }
 
     ngOnInit() {
-        this.increment();
+        
     }
 
     increment() {

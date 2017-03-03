@@ -10,10 +10,10 @@ export const RESET = 'RESET';
  * for the node and browser versions.
  */
 export function initialState(): number {
-    if (typeof window != 'undefined' && typeof window['TRANSFER_STATE'] != 'undefined') {
+    if (typeof window != 'undefined' && typeof window['TRANSFER_STATE'].state != 'undefined') {
         return window['TRANSFER_STATE'].state.counter;
     } else {
-        return 0;
+        return (Math.random() * 100) + 1;
     }
 }
 
